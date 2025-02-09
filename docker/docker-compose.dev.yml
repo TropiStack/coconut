@@ -1,0 +1,6 @@
+services:
+  server:
+    build:
+      dockerfile: docker/Dockerfile.dev
+    volumes:
+      - ../:/app # Mount local code so Air can track file changes

@@ -44,7 +44,7 @@ The server will start on `http://localhost:8080` by default.
 To run the server with live reloading using Docker, use the following command:
 
 ```bash
-docker-compose up coconut-dev
+docker-compose -p coconut-dev -f docker/docker-compose.yml -f docker/docker-compose.dev.yml up
 ```
 
 #### Production
@@ -52,7 +52,7 @@ docker-compose up coconut-dev
 To run the server in a production environment, use:
 
 ```bash
-docker-compose up coconut-prod
+docker-compose -p coconut-prod -f docker/docker-compose.yml -f docker/docker-compose.prod.yml up
 ```
 
 ## Contributing
